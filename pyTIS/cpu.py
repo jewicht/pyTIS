@@ -1,7 +1,10 @@
 import re
 import sys
 import threading
-from queue import Queue
+try:
+    from queue import Queue
+except:
+    from Queue import Queue
 from time import sleep
 
 def sanitize(instruction):

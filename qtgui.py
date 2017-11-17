@@ -1,6 +1,8 @@
 import sys
-
-from queue import Queue
+try:
+    from queue import Queue
+except:
+    from Queue import Queue
 
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
